@@ -7,7 +7,7 @@ let money = 60000,
 
 console.log('type of "money": ', typeof money);
 console.log('type of "income": ', typeof income);
-console.log('typeo f "deposit": ', typeof deposit);
+console.log('type of "deposit": ', typeof deposit);
 
 console.log('length of "addExpenses": ', addExpenses.length);
 
