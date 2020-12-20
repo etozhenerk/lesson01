@@ -118,6 +118,8 @@ class AppData  {
   }
   addExpensesBlock() {
     const cloneExpensesItem = expensesItems[0].cloneNode(true);
+    cloneExpensesItem.children[0].value = "";
+    cloneExpensesItem.children[1].value = "";
     expensesItems[0].parentNode.insertBefore(cloneExpensesItem, expensesPlus);
     expensesItems = document.querySelectorAll('.expenses-items');
     if(expensesItems.length === 3){
@@ -126,6 +128,8 @@ class AppData  {
   }
   addIncomeBlock() {
     const cloneIncomeItem = incomeItem[0].cloneNode(true);
+    cloneIncomeItem.children[0].value = "";
+    cloneIncomeItem.children[1].value = "";
     incomeItem[0].parentNode.insertBefore(cloneIncomeItem, incomePlus);
     incomeItem = document.querySelectorAll('.income-items');
     if(incomeItem.length === 3){

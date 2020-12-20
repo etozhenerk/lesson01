@@ -34,15 +34,15 @@
 
             <div class="additional_income">
                 <div class="additional_income-title title">Возможный доход</div>
-                <input type="text" class="additional_income-item" placeholder="Наименование">
-                <input type="text" class="additional_income-item" placeholder="Наименование">
+                <input type="text" class="additional_income-item" pattern="[А-Яа-яЁё ]+" placeholder="Наименование">
+                <input type="text" class="additional_income-item" pattern="^[ 0-9]+$" placeholder="Наименование">
             </div>
 
             <div class="expenses">
                 <div class="expenses-title title">Обязательные расходы</div>
                 <div class="expenses-items">
-                    <input type="text" class="expenses-title" placeholder="Наименование">
-                    <input type="text" class="expenses-amount" placeholder="Сумма">
+                    <input type="text" class="expenses-title" pattern="[А-Яа-яЁё ]+" placeholder="Наименование">
+                    <input type="text" class="expenses-amount" pattern="^[ 0-9]+$" placeholder="Сумма">
                 </div>
 
                 <button class="btn_plus expenses_add">+</button>
@@ -102,7 +102,7 @@
             </div>
             <div class="result-additional_income">
                 <span class="title">Возможные доходы</span>
-                <input type="text" class="result-total additional_income-value" placeholder="Наименования" disabled>
+                <input type="text" class="result-total additional_income-value" placeholder="Наименования"  disabled>
             </div>
             <div class="result-additional_expenses">
                 <span class="title">Возможные расходы</span>
